@@ -26,6 +26,7 @@ export const subTaskAdding: SubTaskAddingProps = (id, array, task) => {
 };
 
 export const recursionFilter: RecursionProps = (id, array) => {
+
   return array.reduce((arr: TodoType[], item) => {
     if (item.id !== id) {
       arr.push({ ...item, subTasks: recursionFilter(id, item.subTasks) });
