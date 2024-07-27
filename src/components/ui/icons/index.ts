@@ -1,3 +1,3 @@
-export { Arrow } from "./arrow";
-export { Add } from "./add";
+export { ArrowIcon } from "./arrow";
+export { AddIcon } from "./add";
 export { DeleteIcon } from "./delete"

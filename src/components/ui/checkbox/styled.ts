@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import { CheckboxProps } from "./types";
 
-export const Checkbox = styled.input`
-  width: 20px;
-  height: 20px;
+export const Checkbox = styled.input<CheckboxProps>`
+  width: ${(props) => props.$widthAndHeight}px;
+  height: ${(props) => props.$widthAndHeight}px;
+  cursor: pointer;
 `;
 
 export const Label = styled.label`

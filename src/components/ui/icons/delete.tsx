@@ -3,7 +3,7 @@ import { SVGProps } from "react";
 export function DeleteIcon({
   height = 18,
   width = 19,
-  color = "#616D8D",
+  color = "#fff",
 }: SVGProps<SVGSVGElement>) {
   return (
     <svg

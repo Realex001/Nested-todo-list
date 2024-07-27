@@ -1,9 +1,9 @@
 import { SVGProps } from "react";
 
-export function Add({
+export function AddIcon({
   height = 16,
   width = 16,
-  color = "#11304E",
+  color = "#fff",
 }: SVGProps<SVGSVGElement>) {
   return (
     <svg

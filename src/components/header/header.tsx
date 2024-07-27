@@ -1,14 +1,17 @@
 import { HeaderProps } from "./types";
 import * as S from "./styled";
-import { Add } from "../ui/icons";
+import { AddIcon } from "../ui/icons";
 
-export function Header({ modalToggler }: HeaderProps) {
+export function Header({ modalToggler, $isOpenModal }: HeaderProps) {
   return (
     <S.Header>
       <S.HeaderTitle>Список задач</S.HeaderTitle>
-      <div onClick={modalToggler}>
-        <Add />
-      </div>
+      <S.AddTaskWrapper onClick={modalToggler}>
+        <S.AddIconWrapper $isOpenModal={$isOpenModal}>
+          <AddIcon width={22} height={22} />
+        </S.AddIconWrapper>
+        Добавить задачу
+      </S.AddTaskWrapper>
     </S.Header>
   );
 }

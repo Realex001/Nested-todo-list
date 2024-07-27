@@ -1,3 +1,4 @@
 export type HeaderProps = {
-  modalToggler: () => void;
+  modalToggler?: () => void;
+  $isOpenModal: boolean;
 };
