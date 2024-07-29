@@ -37,4 +37,5 @@ Styled components.
 
 - npm start или yarn start
 
-Ссылка на 
+Ссылка на Vercel:
+https://test-todo-pearl.vercel.app/
