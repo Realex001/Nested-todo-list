@@ -6,7 +6,12 @@ export const TodoList = observer(() => {
   return (
     <div>
       {todos.todoArray.map((todoItem) => (
-        <TodoItem key={todoItem.id} isSubTask={false} checkboxHeightAndWidth={20} todoItem={todoItem} />
+        <TodoItem
+          key={todoItem.id}
+          isSubTask={false}
+          checkboxHeightAndWidth={20}
+          todoItem={todoItem}
+        />
       ))}
     </div>
   );

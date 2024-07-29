@@ -81,5 +81,3 @@ export const subTaskCompleteToggler: CompleteTogglerProps = (array, state) => {
     return arr
   }, []);
 };
-
-"rsc"

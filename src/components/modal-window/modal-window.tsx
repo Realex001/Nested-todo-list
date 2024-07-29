@@ -1,13 +1,14 @@
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
-import { TextArea } from "../ui/text-aria";
+import { TextArea } from "../ui/text-area";
 import { ModalProps } from "./types";
 import todos from "./../../store/todos";
 import { observer } from "mobx-react-lite";
+import * as S from "./styled";
 
 export const ModalWindow = observer(({ children, modalTogger }: ModalProps) => {
   return (
-    <div>
+    <S.Modal>
       <Input
         label="Название задачи"
         value={todos.todoTitle}
@@ -18,8 +19,10 @@ export const ModalWindow = observer(({ children, modalTogger }: ModalProps) => {
         value={todos.todoText}
         onChange={(e) => todos.textHandler(e.target.value)}
       />
-      {children}
-      <Button onClick={modalTogger}>Закрыть</Button>
-    </div>
+      <S.FlexWrapper>
+        {children}
+        <Button onClick={modalTogger}>Закрыть</Button>
+      </S.FlexWrapper>
+    </S.Modal>
   );
 });
