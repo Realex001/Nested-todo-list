@@ -10,7 +10,7 @@
 - Сменить тему приложения (светлая/темная)
 
   
-**Технологии**
+**Технологии**:
 React,
 React Hooks,
 TypeScript,
@@ -18,15 +18,23 @@ Mobx,
 Styled components.
 
 **Инструкция**
+
 *Чтобы запустить проект, нужно сделать несколько простых шагов.*
 
 Создайте папку и перейдите в неё:
+
 - cd <Имя-папки>
+
 Склонируйте этот репозиторий:
-- git clone https://github.com/famovkin/react-pizza.git
+
+- git clone https://github.com/Realex001/test_TODO.git
+
 Установите все зависимости:
+
 - yarn или npm install
+  
 Теперь можете запустить сам проект:
+
 - npm start или yarn start
 
 Ссылка на 
